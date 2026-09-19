@@ -22,6 +22,7 @@ try:
             print("读取失败")
             continue
         
+        
         # 转换为灰度图像 高斯模糊
         gray_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
         blur = cv2.GaussianBlur(gray_frame, (5, 5), 0)
